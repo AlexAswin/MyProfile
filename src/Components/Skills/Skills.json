@@ -1,0 +1,28 @@
+{
+    "skills": [
+      {
+        "id": 1,
+        "name": "Angular",
+        "category": "Frontend",
+        "image": "Angular.png"
+      },
+      {
+        "id": 2,
+        "name": "React",
+        "category": "Frontend",
+        "image": "React.png"
+      },
+      {
+        "id": 3,
+        "name": "Node.js",
+        "category": "Backend",
+        "image": "NodeJS.png"
+      },
+      {
+        "id": 4,
+        "name": "MongoDB",
+        "category": "Database",
+        "image": "MongoDB.png"
+      }
+    ]
+  }

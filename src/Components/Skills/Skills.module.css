@@ -1,0 +1,104 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .heading {
+    background-color: black;
+    min-height: 150px;
+    border-radius: 25px;
+    display: flex;
+  
+    h1 {
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+      min-height: 150px;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .skillsGrid {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.skillCard {
+    background-color: #e3d0bb;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;
+    max-width: 400px;
+
+    animation: cardShift linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+    animation-fill-mode: both;
+
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    h5 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+}
+
+.skillCard:nth-child(1) {
+    margin-top: 0px;
+    animation-name: cardShift1;
+}
+
+.skillCard:nth-child(2) {
+    margin-top: 200px;
+    animation-name: cardShift2;
+}
+
+.skillCard:nth-child(3) {
+    margin-top: 300px;
+    animation-name: cardShift3;
+}
+
+.skillCard:nth-child(4) {
+    margin-top: 120px;
+    animation-name: cardShift4;
+}
+
+
+@keyframes cardShift1 {
+    from { transform: translateY(0px); }
+    to { transform: translateY(200px); }
+}
+
+@keyframes cardShift2 {
+    from { transform: translateY(0px); }
+    to { transform: translateY(200px); }
+}
+
+@keyframes cardShift3 {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-400px); }
+}
+
+@keyframes cardShift4 {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-150px); }
+} 

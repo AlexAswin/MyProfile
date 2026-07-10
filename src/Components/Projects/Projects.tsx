@@ -28,7 +28,7 @@ export default function Projects() {
             <div className= {styles.cardBody}>
               <h5 className="card-title">{project.title}</h5>
               <p className="card-text">{project.description}</p>
-              <a href={project.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.linkText}
               </a>
             </div>

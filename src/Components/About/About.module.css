@@ -76,7 +76,24 @@
   }
 }
 
-/* Tablet and below */
+.summery {
+  background-color: rgb(221 204 194);
+  min-height: 300px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    display: flex;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+    max-width: 88%;
+    line-height: 2.6;
+  }
+}
+
+
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
@@ -111,7 +128,6 @@
   }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
   .wrapper {
     gap: 20px 0px;

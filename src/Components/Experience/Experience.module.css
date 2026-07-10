@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Edu+TAS+Beginner:wght@400..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Michroma&family=Quicksand:wght@300..700&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px 30px;
+    align-items: stretch;
+
+    .leftContainer, .rightContainer {
+        max-width: 49%;
+        min-width: 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0px;
+
+        .Heading {
+            background-color: black;
+            min-height: 150px;
+            border-radius: 25px;
+
+            h1 {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                min-height: 100%;
+                padding-left: 50px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            object-position: center;
+            opacity: 0.7;
+          }
+
+          img:hover {
+            opacity: 1;
+          }
+
+        .experienceDetails {
+            background-color:#e3d0bb;
+            border-radius: 25px;
+            padding: 20px;
+            font-family: "Michroma", sans-serif;
+
+            ul {
+                line-height: 2;
+
+                li {
+                    font-size: 13px;
+                }
+            }
+
+        }
+    }
+        
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 30px 0px;
+
+        .leftContainer, .rightContainer {
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        .leftContainer, .rightContainer {
+            gap: 20px 0px;
+
+            .Heading {
+                min-height: 100px;
+
+                h1 {
+                    padding-left: 20px;
+                    font-size: 22px;
+                    text-align: center;
+                    justify-content: center;
+                    min-height: 100px;
+
+                }
+            }
+
+            .experienceDetails {
+                padding: 15px;
+
+                ul {
+                    line-height: 1.8;
+                    padding-left: 20px;
+
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "Experience": [
+      {
+        "title": "UI Developer (Angular)",
+        "company": "TD Bank",
+        "location": "Toronto, ON, Canada",
+        "startDate": "Feb 2023",
+        "endDate": "Mar 2024",
+        "responsibilities": [
+          "Developed and maintained a reusable Angular 13/15/17 component library consumed across multiple enterprise applications.",
+          "Built reusable UI components including dashboards, data tables, navigation menus, forms, and layout components.",
+          "Implemented Angular Signals, RxJS, and NgRx patterns to manage component state and data flow.",
+          "Developed configurable Reactive Forms and validation components for shared business workflows.",
+          "Leveraged Standalone Components, Dependency Injection, and the inject() API to improve maintainability and reusability.",
+          "Created configurable table components with sorting, filtering, pagination, and dynamic columns.",
+          "Ensured responsive design, cross-browser compatibility, and WCAG-compliant accessibility standards.",
+          "Collaborated with developers, architects, and QA teams in Agile/Scrum environments."
+        ]
+      },
+      {
+        "title": "Junior UI Developer",
+        "company": "Intechfy Solutions Pvt. Ltd.",
+        "location": "Bengaluru, India",
+        "startDate": "Jan 2019",
+        "endDate": "Oct 2021",
+        "responsibilities": [
+          "Developed and maintained Angular 9/13 application features for an insurance aggregator platform.",
+          "Built Reactive and Template-Driven Forms with custom validation and dynamic field behaviour.",
+          "Integrated REST APIs using Angular HttpClient and RxJS.",
+          "Developed reusable Angular Material components and shared services.",
+          "Implemented routing, lazy loading, and access control using route guards.",
+          "Fixed UI defects, improved cross-browser compatibility, and supported testing activities.",
+          "Participated in Agile ceremonies, code reviews, and CI/CD deployment activities."
+        ]
+      }
+    ]
+  }

@@ -4,6 +4,8 @@ import About from "../About/About"
 import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
+import Education from "../Education/Education";
+import Footer from "../Footer/Footer";
 
 export default function LandingPage() {
   return (
@@ -14,6 +16,8 @@ export default function LandingPage() {
         <Experience />
         <Skills />
         <Projects />
+        <Education />
+        <Footer />
       </div>
     </>
   );

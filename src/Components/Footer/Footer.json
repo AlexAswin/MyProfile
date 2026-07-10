@@ -1,0 +1,13 @@
+{
+    "name": "Alex Aswin Rajappa",
+    "phone": "123-456-7890",
+    "email": "alex.alexaswin95@gmail.com",
+    "addressLine1": "123 Kanyakumari",
+    "addressLine2": "India",
+
+    "socials": [
+      { "name": "linkedin", "url": "https://linkedin.com/in/yourprofile" },
+      { "name": "instagram", "url": "https://instagram.com/yourprofile" },
+      { "name": "facebook", "url": "https://facebook.com/yourprofile" }
+    ]
+  }

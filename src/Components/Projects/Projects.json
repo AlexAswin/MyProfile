@@ -1,0 +1,37 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Sweet Haven",
+        "description": "A full-featured e-commerce platform for an online bakery, built with Angular 19. Firebase for real-time data management, authentication, and order handling, with a responsive Bootstrap UI",
+        "image": "sweethaven.png",
+        "link": "https://github.com/yourusername/ecommerce-dashboard",
+        "linkText": "View on GitHub"
+      },
+      {
+        "id": 2,
+        "title": "SPMCP",
+        "description": "A vehicle parking management application built with Angular and Angular Material, using Firestore for real-time data storage and RxJS for reactive state management.",
+        "image": "spmcp.png",
+        "link": "https://github.com/yourusername/spmcp",
+        "linkText": "View on GitHub"
+      },
+      {
+        "id": 3,
+        "title": "Madurai Pandiyas",
+        "description": "A responsive restaurant website showcasing menu offerings, ambiance, and dining experience, built with Angular and Bootstrap for a clean, mobile-friendly interface.",
+        "image": "maduraiPandiyas.png",
+        "link": "https://github.com/yourusername/madurai-pandiyas",
+        "linkText": "View on GitHub"
+      },
+      {
+        "id": 4,
+        "title": "Aswin Profile",
+        "description": "A personal portfolio website built with Angular, showcasing professional experience, projects, and skills with a clean, responsive design optimized for all devices.",
+        "image": "aswinResume.png",
+        "link": "https://github.com/yourusername/aswin-profile",
+        "linkText": "View on GitHub"
+      }
+
+    ]
+  }

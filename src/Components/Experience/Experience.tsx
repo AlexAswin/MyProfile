@@ -1,7 +1,6 @@
 import styles from "./Experience.module.css";
 import development from "../../assets/developer.png";
 import professionalExperience from "./Experience.json";
-import hellowWorld from '../../assets/hellow-world2.png'
 
 export default function Experience() {
   return (

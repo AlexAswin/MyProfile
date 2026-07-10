@@ -1,0 +1,26 @@
+{
+    "sectionTitle": "Education",
+    "sectionSubtitle": "Academic Background",
+    "items": [
+      {
+        "id": 1,
+        "icon": "degree",
+        "title": "Master's Degree in Computer Science"
+      },
+      {
+        "id": 2,
+        "icon": "learning",
+        "title": "Continuous Learning and Skill Development"
+      },
+      {
+        "id": 3,
+        "icon": "bachelor",
+        "title": "Bachelor's Degree in Information Technology"
+      },
+      {
+        "id": 4,
+        "icon": "certificate",
+        "title": "Certifications in Advanced Programming Languages"
+      }
+    ]
+  }

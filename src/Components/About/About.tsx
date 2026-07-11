@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import profileImage from "../../assets/Aswin.png";
+import { useEffect, useRef, useState } from "react";
 
 export default function About() {
   const firstName: string = "Alex";
@@ -10,6 +11,29 @@ export default function About() {
   const gmail: string = "alex.alexaswin95@gmail.com";
   const address: string = "TamilNadu, India";
   const linkedIn: string = "alexaswin";
+  const summaryRef = useRef<HTMLDivElement>(null);
+  const [status, setStatus] = useState<'hidden' | 'visible' | 'exited'>('hidden');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStatus('visible');
+        } else if (entry.boundingClientRect.top < 0) {
+          setStatus('exited');
+        } else {
+          setStatus('hidden');
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (summaryRef.current) {
+      observer.observe(summaryRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -61,16 +85,17 @@ export default function About() {
         </div>
       </div>
 
-      <div className={styles.summery}>
-      <p>
-          Frontend Developer specializing in Angular
-          and React, skilled in building scalable, high-performance web
-          applications using TypeScript and modern JavaScript. Strong background
-          in component architecture, state management, and API integration, with
-          a focus on writing clean, maintainable code and delivering great user
-          experiences.
+      <div
+        ref={summaryRef}
+        className={`${styles.summery} ${styles[status]}`}
+      >
+        <p>
+          Frontend Developer specializing in Angular and React, skilled in
+          building scalable, high-performance web applications using TypeScript
+          and modern JavaScript. Strong background in component architecture,
+          state management, and API integration, with a focus on writing clean,
+          maintainable code and delivering great user experiences.
         </p>
-
       </div>
     </>
   );

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Michroma&family=Quicksand:wght@300..700&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 .wrapper {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px 40px;
 }
 
@@ -23,11 +23,11 @@
         font-weight: 500;
         font-style: normal;
         letter-spacing: 10px;
-        line-height: 1.6; 
+        line-height: 1.6;
     }
 }
 
-.card{
+.card {
     width: 50rem;
     /* border: 2px solid #edbc86; */
     padding: 10px;
@@ -36,7 +36,6 @@
     img {
         border-radius: 5px;
     }
-
 
     .cardBody {
         display: flex;
@@ -55,7 +54,6 @@
 }
 
 button {
-    background-color: none;
     color: black;
     border: none;
     background-color: transparent;
@@ -63,5 +61,98 @@ button {
     max-width: 30%;
     margin: 0 auto !important;
     font-family: "Michroma", sans-serif;
+}
 
+.parallaxWrapper {
+    position: relative;
+    width: 95%;
+    height: 82vh;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.container > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    pointer-events: none;
+    justify-content: start !important;
+    font-family: 'Kanit', sans-serif;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.number {
+    font-size: 300px;
+    color: #545864;
+}
+
+.number span {
+    display: inline-block;
+    position: relative;
+}
+
+.slopeBegin {
+    background-color: #20232f;
+    clip-path: polygon(20% 0, 70% 0, 50% 100%, 0% 100%);
+}
+
+.slopeEnd {
+    clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
+    width: 60%;
+}
+
+.slopeBegin,
+.slopeEnd {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.pink {
+    background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.teal {
+    background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+    background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+.purple {
+    background: linear-gradient(to right, MediumPurple 0%, Violet 100%);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    z-index: 10;
+    font-family: "Michroma", sans-serif;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.content p {
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.projectImage {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }

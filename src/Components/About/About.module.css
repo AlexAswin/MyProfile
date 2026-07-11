@@ -28,6 +28,10 @@
         font-style: normal;
         letter-spacing: 10px;
         line-height: 1.6;
+
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeSlideIn 2s ease-out forwards;
       }
     }
 
@@ -90,6 +94,27 @@
     text-align: center;
     max-width: 88%;
     line-height: 2.6;
+
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+}
+
+.summery.visible p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.summery.exited p {
+  opacity: 0;
+  transform: translateX(-100px);
+}  
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

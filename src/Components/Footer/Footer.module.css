@@ -5,7 +5,6 @@
     padding: 70px 50px;
     font-family: "Michroma", sans-serif;
 
-
     h1 {
         color: white;
     }
@@ -15,7 +14,6 @@
         justify-content: space-between;
         align-items: flex-end;
         border-bottom: 1px solid white;
-
     }
 
     .contactInfo {
@@ -29,5 +27,55 @@
         font-size: 25px;
         display: flex;
         padding: 5px 20px;
+    }
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 50px 30px;
+
+        .contactInfo {
+            margin-top: 100px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 640px) {
+    .wrapper {
+        min-height: auto;
+        padding: 40px 20px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .infoRow {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            padding-bottom: 15px;
+        }
+
+        .contactInfo {
+            margin-top: 60px;
+        }
+
+        a {
+            font-size: 18px;
+            padding: 5px 0;
+        }
+    }
+
+    .socialMedia {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
     }
 }

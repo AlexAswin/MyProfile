@@ -19,7 +19,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div>
+                <div className={styles.socialMedia}>
                     <a href=""><i className="bi bi-instagram"></i></a>
                     <a href=""><i className="bi bi-whatsapp"></i></a>
                     <a href=""><i className="bi bi-meta"></i></a>
